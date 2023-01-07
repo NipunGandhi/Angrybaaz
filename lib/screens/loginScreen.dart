@@ -41,12 +41,13 @@ class LoginScreen extends StatelessWidget {
                   height: 570,
                   width: double.infinity,
                   decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(0.2),
+                    borderRadius: BorderRadius.circular(16.0),
+                    border: Border.all(
+                      width: 1.5,
                       color: Colors.white.withOpacity(0.2),
-                      borderRadius: BorderRadius.circular(16.0),
-                      border: Border.all(
-                        width: 1.5,
-                        color: Colors.white.withOpacity(0.2),
-                      )),
+                    ),
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,

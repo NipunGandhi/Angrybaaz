@@ -10,7 +10,14 @@ class BottomCoffeeWidget extends StatelessWidget {
       margin: const EdgeInsets.only(top: 5, bottom: 5),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
-        color: const Color(0xffB4B4B4),
+        color: Colors.white.withOpacity(0.3),
+        boxShadow: [
+          BoxShadow(
+            blurRadius: 10,
+            spreadRadius: 16,
+            color: Colors.black.withOpacity(0.1),
+          )
+        ],
       ),
       child: Row(
         children: [

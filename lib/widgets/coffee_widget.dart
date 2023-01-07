@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:angrybaaz/screens/coffeeScree.dart';
 import 'package:flutter/material.dart';
 
@@ -11,9 +13,17 @@ class CoffeeWidget extends StatelessWidget {
     return GestureDetector(
       child: Container(
         margin: const EdgeInsets.only(top: 10, bottom: 25, right: 15),
+        padding: const EdgeInsets.all(12),
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10),
-          color: const Color(0xff68686A),
+          color: Colors.white.withOpacity(0.4),
+          boxShadow: [
+            BoxShadow(
+              blurRadius: 24,
+              spreadRadius: 16,
+              color: Colors.black.withOpacity(0.4),
+            )
+          ],
+          borderRadius: BorderRadius.circular(6),
         ),
         width: 200,
         child: Column(
